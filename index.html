@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Keystone Property Group | Water, Security, Audio &amp; Home Improvements</title>
+  <meta name="description" content="Keystone Property Group: plumbing, leak detection, damp surveys, security systems, home cinema and general home improvements.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#top">Keystone <span>Property Group</span></a>
+    <nav aria-label="Main">
+      <a href="#water">Water</a>
+      <a href="#security">Security</a>
+      <a href="#audio">Audio &amp; Entertainment</a>
+      <a href="#improvements">Improvements</a>
+      <a class="btn btn-small" href="#contact">Get a quote</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">Keystone Property Group</p>
+      <h1>Everything your property needs, under one roof.</h1>
+      <p class="lead">Protect it, power it, enjoy it and improve it. Water, security, home entertainment and general home improvements from one trusted team.</p>
+      <div class="actions">
+        <a class="btn" href="#contact">Request a free quote</a>
+        <a class="btn btn-ghost" href="#water">Explore services</a>
+      </div>
+    </section>
+
+    <section id="water" class="service">
+      <div class="service-intro">
+        <span class="num">01</span>
+        <h2>Water</h2>
+        <p>Keep your property dry, healthy and leak-free.</p>
+      </div>
+      <ul class="cards">
+        <li><h3>Plumbing</h3><p>Repairs, installations and upgrades carried out cleanly and to a high standard.</p></li>
+        <li><h3>Water Leak Detection</h3><p>Non-invasive detection to pinpoint hidden leaks before they cause costly damage.</p></li>
+        <li><h3>Damp &amp; Environmental Surveys</h3><p>Thorough surveys to identify damp, moisture and environmental issues, with clear recommendations.</p></li>
+      </ul>
+    </section>
+
+    <section id="security" class="service alt">
+      <div class="service-intro">
+        <span class="num">02</span>
+        <h2>Security</h2>
+        <p>Peace of mind for your home or business, day and night.</p>
+      </div>
+      <ul class="cards">
+        <li><h3>Alarms</h3><p>Professionally installed intruder alarm systems tailored to your property.</p></li>
+        <li><h3>Sensors</h3><p>Motion, door, window and environmental sensors for complete coverage.</p></li>
+        <li><h3>CCTV Installation</h3><p>High-definition camera systems with remote viewing from your phone.</p></li>
+      </ul>
+    </section>
+
+    <section id="audio" class="service">
+      <div class="service-intro">
+        <span class="num">03</span>
+        <h2>Home Audio &amp; Entertainment</h2>
+        <p>Cinema-quality experiences at home.</p>
+      </div>
+      <ul class="cards">
+        <li><h3>Home Cinema</h3><p>Screens, projectors and surround sound designed around your room.</p></li>
+        <li><h3>Entertainment Systems</h3><p>Multi-room audio, smart TV setups and seamless wiring, all neatly concealed.</p></li>
+      </ul>
+    </section>
+
+    <section id="improvements" class="service alt">
+      <div class="service-intro">
+        <span class="num">04</span>
+        <h2>General Home Improvements</h2>
+        <p>The finishing touches and the big projects, handled with care.</p>
+      </div>
+      <ul class="cards">
+        <li><h3>Repairs &amp; Maintenance</h3><p>Reliable fixes for the jobs that keep your home in top condition.</p></li>
+        <li><h3>Refurbishments</h3><p>Refresh rooms and spaces with quality workmanship and materials.</p></li>
+        <li><h3>Property Upgrades</h3><p>Practical improvements that add comfort and value.</p></li>
+      </ul>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Get in touch</h2>
+      <p>Tell us what you need and we'll come back with a free, no-obligation quote.</p>
+      <form action="mailto:info@keystonepropertygroup.example" method="post" enctype="text/plain">
+        <label>Name <input name="name" type="text" required autocomplete="name"></label>
+        <label>Email <input name="email" type="email" required autocomplete="email"></label>
+        <label>Service
+          <select name="service">
+            <option>Water</option>
+            <option>Security</option>
+            <option>Home Audio &amp; Entertainment</option>
+            <option>General Home Improvements</option>
+          </select>
+        </label>
+        <label>Message <textarea name="message" rows="4"></textarea></label>
+        <button class="btn" type="submit">Send enquiry</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Keystone Property Group. All rights reserved.</p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
