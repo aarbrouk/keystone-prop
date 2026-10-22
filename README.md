@@ -8,7 +8,8 @@ The landing page has a tile for each service, each linking to its own mini-site:
 - `/bathrooms` (full installations, toilets, baths, basins, showers, tiling)
 - `/security` (alarms, sensors, CCTV)
 - `/entertainment` (home cinema, entertainment systems)
-- `/general` (repairs, refurbishments, upgrades)
+- `/maintenance` (furniture, plumbing repairs, decorating, mastic repairs; `/general` redirects here)
+- `/kitchens` (kitchen installations)
 - `/roofing` (repairs, replacements, maintenance)
 
 ## SEO

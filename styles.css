@@ -95,7 +95,8 @@ nav a:not(.btn):hover::after { transform: scaleX(1); }
 .tile-water { --c: #2a6fb5; }
 .tile-security { --c: #0b2545; }
 .tile-entertainment { --c: #3b4fa8; }
-.tile-general { --c: #5a8fd0; }
+.tile-maintenance { --c: #5a8fd0; }
+.tile-kitchens { --c: #2f8f9d; }
 .tile-roofing { --c: #4a6c8f; }
 .tile-bathrooms { --c: #17406f; }
 
@@ -120,7 +121,8 @@ form .btn { justify-self: start; }
 .theme-water { --theme: #2a6fb5; --theme-dark: #1b4f87; }
 .theme-security { --theme: #0b2545; --theme-dark: #06162b; }
 .theme-entertainment { --theme: #3b4fa8; --theme-dark: #283a82; }
-.theme-general { --theme: #5a8fd0; --theme-dark: #3a6fb0; }
+.theme-maintenance { --theme: #5a8fd0; --theme-dark: #3a6fb0; }
+.theme-kitchens { --theme: #2f8f9d; --theme-dark: #1f6f7c; }
 .theme-roofing { --theme: #4a6c8f; --theme-dark: #324c69; }
 .theme-bathrooms { --theme: #17406f; --theme-dark: #0e2c50; }
 .page-hero {

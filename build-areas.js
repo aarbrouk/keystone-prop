@@ -7,12 +7,13 @@ const BUSINESS_ID = SITE + '/#business';
 const today = new Date().toISOString().slice(0, 10);
 
 const services = [
-  { path: 'water', label: 'Plumbing & water leak detection', short: 'plumbing, water leak detection and damp surveys' },
   { path: 'bathrooms', label: 'Bathroom installations', short: 'full bathroom installations including toilets, baths, basins, showers and tiling' },
+  { path: 'kitchens', label: 'Kitchen installations', short: 'units, worktops, appliances and tiling' },
   { path: 'security', label: 'Alarm, sensor & CCTV installation', short: 'alarms, sensors and CCTV installation' },
-  { path: 'entertainment', label: 'Home cinema & entertainment systems', short: 'home cinema and multi-room entertainment systems' },
-  { path: 'general', label: 'General home improvements', short: 'repairs, refurbishments and property upgrades' },
+  { path: 'maintenance', label: 'Property maintenance', short: 'furniture, plumbing repairs, decorating and mastic repairs' },
+  { path: 'water', label: 'Plumbing & water leak detection', short: 'plumbing, water leak detection and damp surveys' },
   { path: 'roofing', label: 'Roofing repairs & replacements', short: 'roof repairs, replacements and maintenance' },
+  { path: 'entertainment', label: 'Home cinema & entertainment systems', short: 'home cinema and multi-room entertainment systems' },
 ];
 
 const places = [
@@ -42,13 +43,13 @@ function header(depth) {
   return `  <header class="site-header">
     <a class="logo" href="${r('')}">Keystone <span>Property Group</span></a>
     <nav aria-label="Main">
-      <a href="${r('water/')}">Water</a>
       <a href="${r('bathrooms/')}">Bathrooms</a>
+      <a href="${r('kitchens/')}">Kitchens</a>
       <a href="${r('security/')}">Security</a>
-      <a href="${r('entertainment/')}">Entertainment</a>
-      <a href="${r('general/')}">General</a>
+      <a href="${r('maintenance/')}">Maintenance</a>
+      <a href="${r('water/')}">Water</a>
       <a href="${r('roofing/')}">Roofing</a>
-      <a href="${r('areas/')}">Areas</a>
+      <a href="${r('entertainment/')}">Entertainment</a>
       <a class="btn btn-small" href="${r('#contact')}">Get a quote</a>
     </nav>
   </header>`;
@@ -132,7 +133,7 @@ function placePage(p) {
     <section class="sub reveal">
       <div>
         <h2>What we do in ${esc(p.name)}</h2>
-        <p>One local team for water, bathrooms, security, home entertainment, roofing and general home improvements. Pick a service to see what we offer.</p>
+        <p>One local team for water, bathrooms, kitchens, security, home entertainment, roofing and property maintenance. Pick a service to see what we offer.</p>
       </div>
       <ul class="points">
 ${cards.replace(/<li><h3>/g, '<li><strong>').replace(/<\/h3><p>/g, '</strong><span>').replace(/<\/p><\/li>/g, '</span></li>')}
@@ -220,7 +221,7 @@ function write(file, content) {
 write(path.join(__dirname, 'areas', 'index.html'), hubPage());
 places.forEach((p) => write(path.join(__dirname, 'areas', p.slug, 'index.html'), placePage(p)));
 
-const urls = ['/', ...services.map((s) => `/${s.path}/`), '/areas/', ...places.map((p) => `/areas/${p.slug}/`)];
+const urls = ['/', ...services.map((s) => `/${s.path}/`), '/security/bournemouth/', '/security/south-england/', '/areas/', ...places.map((p) => `/areas/${p.slug}/`)];
 write(
   path.join(__dirname, 'sitemap.xml'),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
